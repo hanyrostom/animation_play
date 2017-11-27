@@ -6,13 +6,18 @@ body {
 
 
 }
+.main {
+  display: flex;
+}
 .content {
-  max-width: 960px;
+
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   flex-shrink: 2;
+  flex-grow: 2;
 }
   .row {
     width: 100%;
@@ -26,7 +31,7 @@ body {
 
 .box {
   display: flex;
-  margin: .5rem;
+  margin: .25rem;
   width: 15rem;
   height: 15rem;
   justify-content: center;
@@ -35,7 +40,7 @@ body {
   color: white;
 }
 
-#a {
+a#a {
   background-color: #22D9A3;
 }
 
@@ -54,6 +59,24 @@ body {
 #i {
   background-color: #224AD9;
 }
-.r2 ,.r3{
+/*backup color*/
+
+.box {
   background-color: firebrick;
+}
+/*animation and transition*/
+a {
+  text-decoration: none;
+}
+.box:hover {
+  color: lightgrey;
+  font-size: 8rem;
+}
+
+.box:active {
+  color: yellow;
+  font-size: 12rem;
+}
+#a:hover{
+  background-color: black;
 }
