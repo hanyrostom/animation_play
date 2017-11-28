@@ -67,6 +67,7 @@ span {
   font-size: 3rem;
   color: white;
   border-radius: 6px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
 }
 
 .bx1 {
@@ -98,8 +99,7 @@ span {
 /*animation and transition*/
 a {
   text-decoration: none;
-  transition-property: background-color;
-  transition-duration: 800ms;
+  transition: all 700ms ease-out;
 
 }
 /* when hover; letter*/
@@ -236,6 +236,6 @@ a {
     flex-direction: column;
     align-items: center;
     margin: 0;
-    
+
   }
 }
