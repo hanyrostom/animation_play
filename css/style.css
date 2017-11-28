@@ -4,7 +4,7 @@ html {
   }
 body {
   /*background-color: beige;*/
-text-align: center;
+text-align: left;
 
 
 }
@@ -19,6 +19,18 @@ text-align: center;
 .instructions {
 font-family: 'Sanchez', serif;
 
+
+}
+.txt {
+  margin-top: -1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 89%;
+
+}
+span {
+  display: none;
 }
 .content {
 
@@ -43,6 +55,7 @@ font-family: 'Sanchez', serif;
 
 .box {
   display: flex;
+  flex-direction: column;
   margin: .5rem;
   width: 15rem;
   height: 15rem;
@@ -91,6 +104,21 @@ a {
 .box:hover {
   color: lightgrey;
   font-size: 8rem;
+}
+/* hint under letter*/
+.box:hover span{
+  display: block;
+  font-size: .55rem;
+
+  opacity: .6;
+  font-family: 'Press Start 2P', cursive;
+  position: relative;
+  top: -1rem;
+  padding: 0.5rem;
+}
+.box:active span{
+  display: none;
+
 }
 /* when active; letter*/
 .box:active {
