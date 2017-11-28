@@ -3,21 +3,32 @@ html {
   }
 body {
   /*background-color: beige;*/
+text-align: center;
 
 
 }
 .main {
   display: flex;
+  flex-shrink: 2;
+  flex-grow: 2;
+  width: 960px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.instructions {
+
 }
 .content {
 
   display: flex;
   flex-direction: column;
   position: relative;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding:0.75rem;
   flex-shrink: 2;
   flex-grow: 2;
+  max-width: 75%;
+  height: auto;
+  border: 1px solid black;
 }
   .row {
     width: 100%;
@@ -31,7 +42,7 @@ body {
 
 .box {
   display: flex;
-  margin: .25rem;
+  margin: .5rem;
   width: 15rem;
   height: 15rem;
   justify-content: center;
@@ -40,43 +51,93 @@ body {
   color: white;
 }
 
-a#a {
+.bx1 {
   background-color: #22D9A3;
 }
 
-#b ,#d{
+.bx2{
   background-color: #23E3E1;
 
 }
-#c ,#e ,#g{
+.bx3{
   background-color: #2AA3CC;
 }
 
 
-#f ,#h {
+.bx4 {
   background-color: #2380E3;
 }
-#i {
+.bx5 {
   background-color: #224AD9;
 }
-/*backup color*/
+/*backup color
 
 .box {
   background-color: firebrick;
 }
+*/
+
 /*animation and transition*/
 a {
   text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 400ms;
+
 }
+/* when hover; letter*/
+
 .box:hover {
   color: lightgrey;
   font-size: 8rem;
 }
-
+/* when active; letter*/
 .box:active {
   color: yellow;
   font-size: 12rem;
+
 }
-#a:hover{
-  background-color: black;
+/* when hovering; box */
+
+.bx1:hover{
+  background-color: hsla(321,75%,55%,0.99);
+ width:17rem;
+ height: 17rem;
+}
+.bx2:hover{
+  background-color: hsla(321,75%,65%,0.99);
+  width:17rem;
+  height: 17rem;
+}
+.bx3:hover{
+  background-color: hsla(321,75%,69%,0.99);
+  width:17rem;
+  height: 17rem;
+}
+.bx4:hover{
+  background-color: hsla(321,75%,77%,0.99);
+  width:17rem;
+  height: 17rem;
+}
+.bx5:hover{
+  background-color: hsla(321,75%,87%,1);
+  width:17rem;
+  height: 17rem;
+}
+
+
+.bx1:active {
+  background-color: hsl(151,86%,55%);
+
+}
+.bx2:active{
+  background-color: hsla(151,86%,65%,0.99);
+}
+.bx3:active{
+  background-color: hsla(151,86%,69%,0.99);
+}
+.bx4:active{
+  background-color: hsla(151,86%,77%,0.99);
+}
+.bx5:active{
+  background-color: hsla(151,86%,87%,1);
 }
