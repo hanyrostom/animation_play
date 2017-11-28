@@ -16,7 +16,10 @@ text-align: left;
   justify-content: space-between;
   margin: 0 auto;
 }
-.instructions {
+.hint {
+  color: hsla(321,75%,69%,0.99);
+}
+.instructions , .hint{
 font-family: 'Sanchez', serif;
 
 
@@ -39,7 +42,7 @@ span {
   position: relative;
   padding:.75rem;
 
-  max-width: 75%;
+  max-width: 70%;
   height: auto;
   border: none;
 }
@@ -231,7 +234,8 @@ a {
   { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
   .main {
     flex-direction: column;
-    text-align: center;
+    align-items: center;
     margin: 0;
+    
   }
 }
