@@ -18,16 +18,15 @@ text-align: center;
 }
 .instructions {
 font-family: 'Sanchez', serif;
-font-weight: bold;
+
 }
 .content {
 
   display: flex;
   flex-direction: column;
   position: relative;
-  padding:0.75rem;
-  flex-shrink: 2;
-  flex-grow: 2;
+  padding:.75rem;
+
   max-width: 75%;
   height: auto;
   border: none;
@@ -51,6 +50,7 @@ font-weight: bold;
   align-items: center;
   font-size: 3rem;
   color: white;
+  border-radius: 6px;
 }
 
 .bx1 {
